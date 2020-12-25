@@ -1,0 +1,7 @@
+KMP  RK  BMH 
+  0  194    0  Pattern length 8967
+  0  2478    0  Pattern length 2146
+  0  189    0  Pattern length 3172
+  0  138    0  Pattern length 1225
+  0  226    1  Pattern length 12874
+  0  

@@ -1,0 +1,165 @@
+Coding Theory
+
+Coding Theory
+Algorithms, Architectures, and
+Applications
+Andre Neubauer
+M unster University of Applied Sciences, Germany
+Jurgen Freudenberger
+HTWG Konstanz, University of Applied Sciences, Germany
+Volker Kuhn
+University of Rostock, Germany
+Copyright 2007 John Wiley & Sons Ltd, The Atrium, Southern Gate, Chichester,
+West Sussex PO19 8SQ, England
+Telephone (+44) 1243 779777
+Email (for orders and customer service enquiries)
+Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.
+Other Wiley Editorial Offices
+John Wiley & Sons Inc., 111 River Street, Hoboken, NJ 07030, USA
+Jossey-Bass, 989 Market Street, San Francisco, CA 94103-1741, USA
+Wiley-VCH Verlag GmbH, Boschstr. 12, D-69469 Weinheim, Germany
+John Wiley & Sons Australia Ltd, 42 McDougall Street, Milton, Queensland 4064, Australia
+John Wiley & Sons (Asia) Pte Ltd, 2 Clementi Loop 02-01, Jin Xing Distripark, Singapore 129809
+John Wiley & Sons Canada Ltd, 6045 Freemont Blvd, Mississauga, Ontario, L5R 4J3, Canada
+Wiley also publishes its books in a variety of electronic formats. Some content that appears
+in print may not be available in electronic books.
+Anniversary Logo Design: Richard J. Pacifico
+Library of Congress Cataloging-in-Publication Data
+Neubauer, Andre.
+Coding theory : algorithms, architectures and applications / Andre
+Neubauer, Jurgen Freudenberger, Volker K uhn. p. cm.
+ISBN 978-0-470-02861-2 (cloth)
+1. Coding theory. I Freudenberger, Jrgen. II. Kuhn, Volker. III.
+Title QA268.N48 2007 003.54–dc22
+British Library Cataloguing in Publication Data
+A catalogue record for this book is available from the British Library
+ISBN 978-0-470-02861-2 (HB)
+Typeset in 12pt Times by Laserwords Private Limited, Chennai, India
+Printed and bound in Great Britain by Antony Rowe Ltd, Chippenham, Wiltshire
+This book is printed on acid-free paper responsibly manufactured from sustainable forestry
+in which at least two trees are planted for each one used for paper production.
+ContentsCoding Theory
+
+Coding Theory
+Algorithms, Architectures, and
+Applications
+Andre Neubauer
+M unster University of Applied Sciences, Germany
+Jurgen Freudenberger
+HTWG Konstanz, University of Applied Sciences, Germany
+Volker Kuhn
+University of Rostock, Germany
+Copyright 2007 John Wiley & Sons Ltd, The Atrium, Southern Gate, Chichester,
+West Sussex PO19 8SQ, England
+Telephone (+44) 1243 779777
+Email (for orders and customer service enquiries)
+Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.Designations used by companies to distinguish their products are often claimed as trademarks. All brand names
+and product names used in this book are trade names, service marks, trademarks or registered trademarks of
+their respective owners. The Publisher is not associated with any product or vendor mentioned in this book. All
+trademarks referred to in the text of this publication are the property of their respective owners.
+This publication is designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the Publisher is not engaged in rendering professional services. If
+professional advice or other expert assistance is required, the services of a competent professional should be
+sought.
+Other Wiley Editorial Offices
+John Wiley & Sons Inc., 111 River Street, Hoboken, NJ 07030, USA
+Jossey-Bass, 989 Market Street, San Francisco, CA 94103-1741, USA
+Wiley-VCH Verlag GmbH, Boschstr. 12, D-69469 Weinheim, Germany
+John Wiley & Sons Australia Ltd, 42 McDougall Street, Milton, Queensland 4064, Australia
+John Wiley & Sons (Asia) Pte Ltd, 2 Clementi Loop 02-01, Jin Xing Distripark, Singapore 129809
+John Wiley & Sons Canada Ltd, 6045 Freemont Blvd, Mississauga, Ontario, L5R 4J3, Canada
+Wiley also publishes its books in a variety of electronic formats. Some content that appears
+in print may not be available in electronic books.
+Anniversary Logo Design: Richard J. Pacifico
+Library of Congress Cataloging-in-Publication Data
+Neubauer, Andre.
+Coding theory : algorithms, architectures and applications / Andre
+Neubauer, Jurgen Freudenberger, Volker K uhn. p. cm.
+ISBN 978-0-470-02861-2 (cloth)
+1. Coding theory. I Freudenberger, Jrgen. II. Kuhn, Volker. III.
+Title QA268.N48 2007 003.54–dc22
+British Library Cataloguing in Publication Data
+A catalogue record for this book is available from the British Library
+ISBN 978-0-470-02861-2 (HB)
+Typeset in 12pt Times by Laserwords Private Limited, Chennai, India
+Printed and bound in Great Britain by Antony Rowe Ltd, Chippenham, Wiltshire
+This book is printed on acid-free paper responsibly manufactured from sustainable forestry
+in which at least two trees are planted for each one used for paper production.
+Contents
